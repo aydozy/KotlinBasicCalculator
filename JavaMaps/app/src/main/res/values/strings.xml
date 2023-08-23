@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JavaMaps</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>
