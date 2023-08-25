@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/secondNum"
+        android:layout_width="233dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Enter second number"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <EditText
+        android:id="@+id/firstNum"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Enter first number"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="92dp"
+        android:text="/"
+        android:onClick="divide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNum" />
+
+    <Button
+        android:id="@+id/extractButton"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="92dp"
+        android:text="-"
+        android:onClick="extract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNum" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="92dp"
+        android:text="*"
+        android:onClick="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNum" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="92dp"
+        android:text="+"
+        android:onClick="sum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNum" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="254dp"
+        android:layout_height="37dp"
+        android:text="Result: "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
