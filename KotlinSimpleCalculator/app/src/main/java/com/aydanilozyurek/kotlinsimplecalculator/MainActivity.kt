@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             result = number1!! / number2!!
             binding.resultText.text = "Result: ${result}"
         } else {
-            binding.resultText.text = "Enter invalid number!"
+            binding.resultText.text = "Enter valid number!"
         }
     }
     fun multiply(view : View){
